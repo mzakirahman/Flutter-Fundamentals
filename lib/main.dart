@@ -9,8 +9,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
       return MaterialApp(
         home:Scaffold(
-          appBar: AppBar(title: Text("aplikasi hellow world"),),
-          body:Center(child: Text ("heloo world")),
+          appBar: AppBar(title: Text("Latihan row dan collomn"),),
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("text1"),
+              Text("text2"),
+              Text("text3"),
+              Row(
+                children: <Widget>[
+                  Text("textrow1"),
+                  Text("textrow2"),
+                  Text("textrow3")
+                ],
+              )
+            ]
+          ),
       ),
     ); 
   }
