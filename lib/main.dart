@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,26 +9,25 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-      return MaterialApp(
-        home:Scaffold(
-          appBar: AppBar(title: Text("Latihan row dan collomn"),),
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text("text1"),
-              Text("text2"),
-              Text("text3"),
-              Row(
-                children: <Widget>[
-                  Text("textrow1"),
-                  Text("textrow2"),
-                  Text("textrow3")
-                ],
-              )
-            ]
-          ),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("aplikasi hello world"),
+        ),
+        body: Center(
+            child: Container(
+                color: Colors.blue,
+                width: 150,
+                height: 100,
+                child: Text(
+                  "saya sedang melatih kemampuan flutter saya",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 20),
+                ))),
       ),
-    ); 
+    );
   }
 }
